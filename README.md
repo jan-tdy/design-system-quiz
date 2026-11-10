@@ -1,17 +1,17 @@
-# Cross-Platform Design System Configuration Engine
+# Design System Quiz
 
-A self-contained, single-file browser application for configuring a cross-platform design system and exporting a detailed Markdown master specification with a raw JSON token configuration.
+A friendly, visual quiz that helps people choose the look and behavior of a design system, one question at a time. Each of its 62 choices includes a small on-screen preview. Finish the quiz to download or copy a detailed Markdown guide with JSON design tokens.
 
-## Use
+## Try it
 
-Open `index.html` in a modern browser. No build step, external dependency, server, or network connection is required. Answer all 62 questions across seven architecture modules. Answers and the project name are saved in browser local storage. Use the question map to navigate, reset to clear the saved configuration, or download/copy the generated `.md` specification after completing all questions.
+Open `index.html` in a modern browser. Nothing to install, no build step, and no network connection are required. Your answers and system name save on your device. Use the module list to revisit a section, or choose **Start over** to clear your saved answers.
 
-The generated blueprint includes the full decision register, suggested implementation sequence, accessibility acceptance criteria, validation prompts, and JSON tokens for semantic color modes, spacing, typography, density, motion, elevation, and platform conventions. Review generated defaults against product requirements before implementation.
+The exported guide includes the full decision list, suggested implementation steps, accessibility notes, follow-up checks, and starter values for light and dark colors, spacing, typography, density, motion, and platform behavior. Review those starter values against your product before implementing them.
+
+## GitHub Pages
+
+The included workflow publishes `index.html` when changes reach `main`, and supports manual runs from the Actions tab. In repository **Settings → Pages**, choose **GitHub Actions** as the deployment source. The site is a static single-file app and needs no build dependencies.
 
 ## License
 
 MIT. See [LICENSE](LICENSE).
-
-## GitHub Pages deployment
-
-The `Deploy static site to GitHub Pages` workflow publishes `index.html` from the repository root whenever a commit reaches `main`, and supports manual runs from the Actions tab. In repository **Settings → Pages**, select **GitHub Actions** as the build and deployment source. The deployed site is a static single-file app and needs no build dependencies.
